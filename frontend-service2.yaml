@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend2
+  labels:
+    name: frontend2
+spec:
+  ports:
+  - port: 80
+  clusterIP: None
+  selector:
+    name: frontend
